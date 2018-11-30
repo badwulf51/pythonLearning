@@ -2,7 +2,7 @@ import numpy as np # Import for numpy
 import keras as kr # Import for keras, check notebook for details on how to install 
 import gzip # import for gzip for handling files
 import matplotlib.pyplot as plt # import for making plots 
-import sklearn.preprocessing as pre # # Import for sklearn, for encoding categorical variables.
+import sklearn.preprocessing as pre # # Import for sklearn, for encoding categorical variables into binary.
 from keras.models import model_from_json # importing json for keras 
 
 #print ("keras version: " + kr.__version__) # outputs the keras version number you have installed, used to see if everything is working fine
@@ -10,7 +10,7 @@ from keras.models import model_from_json # importing json for keras
 def NeuralNetwork() :
     model = kr.models.Sequential() # create a neural network first and then build it by layers
 
-    # Adds hidden layer with 100 neurons 
+    # Adds hidden layer with 1000 neurons 
     model.add(kr.layers.Dense(units=600, activation='linear', input_dim=784))
     model.add(kr.layers.Dense(units=400, activation='relu'))
 # three neuron output layer.
