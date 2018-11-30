@@ -7,6 +7,25 @@ from keras.models import model_from_json # importing json for keras
 
 #print ("keras version: " + kr.__version__) # outputs the keras version number you have installed, used to see if everything is working fine
 
+def NeuralNetwork() :
+    model = kr.models.Sequential() # create a neural network first and then build it by layers
+
+    # Add a hidden layer with 1000 neurons and an input layer with 784.
+    model.add(kr.layers.Dense(units=600, activation='linear', input_dim=784))
+    model.add(kr.layers.Dense(units=400, activation='relu'))
+# Add a three neuron output layer.
+    model.add(kr.layers.Dense(units=10, activation='softmax'))
+
+# Build the graph.
+    model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+
+    with gzip.open('MNISTdata/train-images-idx3-ubyte.gz', 'rb') as f:
+     trainimg = f.read()
+
+    with gzip.open('MNISTdata/train-labels-idx1-ubyte.gz', 'rb') as f:
+     trainlbl = f.read()
+
+     print ("keras version: " + kr.__version__)
 
 def Menu():
 
@@ -22,7 +41,7 @@ def Menu():
         SystemExit
     
 def main(): # main function 
-   Menu()
+   NeuralNetwork()
 
 
 
