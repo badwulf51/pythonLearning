@@ -1,88 +1,36 @@
-# Project Title
+# Python Learning 
 
-One Paragraph of project description goes here
 
-## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+## Purpose Of This Repo
 
-### Prerequisites
+The purpose of this repo is to study and research the fundamentals of python and its various packages and libraries. The repo contains a notebook for numpy, iris data set, MNIST and a digit recognition script as well as details on how to run the script.
 
-What things you need to install the software and how to install them
+### Numpy 
+Numpy was my first step into the world of python and It was rather simple to grasp and understand. The notebook shows various features of the numpy library such as functions to manipulate random data and different types of distribution plots.
 
 ```
 Give examples
 ```
 
-### Installing
+### Iris Dataset
 
-A step by step series of examples that tell you how to get a development env running
+This notebook is slightly incomplete. The neural network isnt working right (Im not sure) but its purpose is to contain documentation on the iris data set that is used for machine learning. The notebook contains information about the set itself as well as various plots and distributions showing the differences in size of the Iris flowers. It is ment to contain an example of a neural network detecting which type of Iris plants data is shown but it is not working correctly. (I think)
 
-Say what the step will be
+### MNIST
 
-```
-Give the example
-```
+The MNIST dataset notebook contains information about MNIST's digit recognition library for machine learning. The notebook has the training files from MNISTS main website and shows you how to open them with gzip. It also contains a for loop that loops through each image and saves it to your file directory as well as other various features of MNIST and OpenCv. 
 
-And repeat
+### Digit recognition
 
-```
-until finished
-```
+This notebook is unifished, as well as the script. The purpose of it is for Digit recognition using a Keras neural network. It is ment to allow the user to show the model an image and see if it can predict what that image is. For now it only shows prediction scores between different epochs agiants the MNIST dataset. 
 
-End with an example of getting some data out of the system or using it for a little demo
 
-## Running the tests
+## Acknowledgments and sources 
 
-Explain how to run the automated tests for this system
+* Dr. Ian McLoughlin for his various tutorials on github and for his tutorial for neural networks with keras: https://github.com/ianmcloughlin/jupyter-teaching-notebooks
+* Numpy documentation
+* https://www.kaggle.com/saurabh00007/iriscsv For the Iriscv file used for the Iris notebook 
+* http://yann.lecun.com/exdb/mnist/ For the MNIST datasets
 
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
 
